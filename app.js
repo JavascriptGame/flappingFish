@@ -8,7 +8,7 @@ function loadImgs(arr, fnSucc) {
             if(loaded==arr.length) {
                 fnSucc(json);
             }
-        };
+        }
         oImg.src = arr[i];
         var name = arr[i].split('.')[0];
         json[name] = oImg;
@@ -144,11 +144,4 @@ window.onload = function () {
             return true;
         }
     }
-}
-
-
-
-
-
-
-
+};
